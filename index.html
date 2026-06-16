@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TOC - Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<div class="grid"></div>
+<div class="scanlines"></div>
+
+<div class="topbar">
+    <div class="logo">TACTICAL OPERATIONS CENTER</div>
+    <div class="clock" id="clock"></div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <button class="btn" onclick="location.href='briefing.html'">MISSION BRIEFING</button>
+        <button class="btn" onclick="location.href='map.html'">TACTICAL MAP</button>
+        <button class="btn" onclick="location.href='vehicles.html'">VEHICLE DATABASE</button>
+        <button class="btn" onclick="location.href='weapons.html'">WEAPON DATABASE</button>
+        <button class="btn" onclick="location.href='intel.html'">INTEL ARCHIVE</button>
+    </div>
+
+    <div class="main">
+        <div class="title">SYSTEM OVERVIEW</div>
+
+        <div class="panel">
+            NETWORK STATUS: <span style="color:#00ff66;">ONLINE</span><br>
+            SATELLITES: 127 ACTIVE<br>
+            TRACKED OBJECTS: 14,382<br>
+            GLOBAL THREAT INDEX: ELEVATED
+        </div>
+
+        <div class="panel">
+            SELECT A MODULE TO BEGIN OPERATIONS
+        </div>
+    </div>
+
+</div>
+
+<script>
+setInterval(()=>{
+    document.getElementById("clock").textContent =
+        new Date().toUTCString();
+},1000);
+</script>
+
+</body>
+</html>
