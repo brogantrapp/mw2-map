@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tactical Map</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<div class="grid"></div>
+<div class="scanlines"></div>
+
+<div class="topbar">
+    <div class="logo">TACTICAL MAP</div>
+    <div class="clock" id="clock"></div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <button class="btn" onclick="location.href='index.html'">HOME</button>
+    </div>
+
+    <div class="main">
+        <div class="title">MAP MODULE</div>
+
+        <div class="panel">
+            NEXT STEP: We will add a real 3D globe + satellite view here.
+        </div>
+    </div>
+
+</div>
+
+<script>
+setInterval(()=>{
+    document.getElementById("clock").textContent =
+        new Date().toUTCString();
+},1000);
+</script>
+
+</body>
+</html>
