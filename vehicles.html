@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vehicles</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<div class="grid"></div>
+<div class="scanlines"></div>
+
+<div class="topbar">
+    <div class="logo">VEHICLE DATABASE</div>
+    <div class="clock" id="clock"></div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <button class="btn" onclick="location.href='index.html'">HOME</button>
+    </div>
+
+    <div class="main">
+        <div class="title">3D VEHICLE VIEWER (NEXT STEP)</div>
+
+        <div class="panel">
+            This is where we will load GLB models and rotate them in 3D.
+        </div>
+
+        <div class="panel">
+            Examples:
+            - Tanks
+            - Helicopters
+            - Jets
+            - APCs
+        </div>
+    </div>
+
+</div>
+
+<script>
+setInterval(()=>{
+    document.getElementById("clock").textContent =
+        new Date().toUTCString();
+},1000);
+</script>
+
+</body>
+</html>
